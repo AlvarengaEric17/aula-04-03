@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Laranja from "./components/Laranja";
+
+import { Text } from 'react-native'
+import { SafeAreaView } from "react-native"
+import MeuTime from "./components/MeuTime";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <SafeAreaView>
+      {/* <Laranja materia="Carros" atividade="Civic G-10" /> */}
+      <MeuTime nome="Santos" posicao="17°" />
+    </SafeAreaView>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
